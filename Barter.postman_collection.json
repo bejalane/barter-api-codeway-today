@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "e6397cfc-70b3-4918-9bb6-a7f8a8bbcff2",
+		"name": "Barter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Barters",
+			"item": [
+				{
+					"name": "Get barters",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/barter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"barter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Barter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlYWM4OGY2LTZjMWYtNDc1Ny1hN2Y4LTBhMjc5MDUzY2RlNyIsInVzZXJuYW1lIjoiYWxleCIsImlhdCI6MTYzMzk4ODY4OCwiZXhwIjoxNjM0NTkzNDg4fQ.7k7WND8s4chsUrIKZk1_Htxg4v5posW1vHcR9_Nn32w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"barter\": \"Some barter\",\n    \"learn\": \"English\",\n    \"teach\": \"Code\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/barter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"barter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Barter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlYWM4OGY2LTZjMWYtNDc1Ny1hN2Y4LTBhMjc5MDUzY2RlNyIsInVzZXJuYW1lIjoiYWxleCIsImlhdCI6MTYzMzk4ODY4OCwiZXhwIjoxNjM0NTkzNDg4fQ.7k7WND8s4chsUrIKZk1_Htxg4v5posW1vHcR9_Nn32w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"barter\": \"Some barter1\",\n    \"learn\": \"English\",\n    \"teach\": \"Code\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/barter/62e90269-4c6a-4193-8a36-400fad717b0a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"barter",
+								"62e90269-4c6a-4193-8a36-400fad717b0a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Barter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlYWM4OGY2LTZjMWYtNDc1Ny1hN2Y4LTBhMjc5MDUzY2RlNyIsInVzZXJuYW1lIjoiYWxleCIsImlhdCI6MTYzMzk4ODY4OCwiZXhwIjoxNjM0NTkzNDg4fQ.7k7WND8s4chsUrIKZk1_Htxg4v5posW1vHcR9_Nn32w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/barter/62e90269-4c6a-4193-8a36-400fad717b0a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"barter",
+								"62e90269-4c6a-4193-8a36-400fad717b0a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"username\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"alex\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check if user is logged in",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlYWM4OGY2LTZjMWYtNDc1Ny1hN2Y4LTBhMjc5MDUzY2RlNyIsInVzZXJuYW1lIjoiYWxleCIsImlhdCI6MTYzMjA2NTgyMiwiZXhwIjoxNjMyNjcwNjIyfQ.lqfERD64Dy96E68eaRFkiqNDO9VoO7iMtiy4h8Ic25k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/auth/checkLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"checkLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Get all comments by user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/comment/user/dea2e43b-eae8-428a-b59f-f2d2d4f02e6e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"comment",
+								"user",
+								"dea2e43b-eae8-428a-b59f-f2d2d4f02e6e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlYWM4OGY2LTZjMWYtNDc1Ny1hN2Y4LTBhMjc5MDUzY2RlNyIsInVzZXJuYW1lIjoiYWxleCIsImlhdCI6MTYzMzk4ODY4OCwiZXhwIjoxNjM0NTkzNDg4fQ.7k7WND8s4chsUrIKZk1_Htxg4v5posW1vHcR9_Nn32w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\": \"This is my comment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/comment/barter/d82c5fbe-607c-4ff6-92cd-7117b519b451",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"comment",
+								"barter",
+								"d82c5fbe-607c-4ff6-92cd-7117b519b451"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZlYWM4OGY2LTZjMWYtNDc1Ny1hN2Y4LTBhMjc5MDUzY2RlNyIsInVzZXJuYW1lIjoiYWxleCIsImlhdCI6MTYzMzk4ODY4OCwiZXhwIjoxNjM0NTkzNDg4fQ.7k7WND8s4chsUrIKZk1_Htxg4v5posW1vHcR9_Nn32w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/comment/f34c9bd7-d9a3-47df-9af1-8f2587739af3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"comment",
+								"f34c9bd7-d9a3-47df-9af1-8f2587739af3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
