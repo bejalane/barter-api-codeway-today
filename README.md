@@ -1,10 +1,8 @@
-<p align="center">
-  <a href="http://learning.codeway.today" target="blank"><img src="https://codeway.today/wp-content/uploads/2021/10/logo-black.png" width="320" alt="Codeway.today Logo" /></a>
-</p>
+<a href="http://learning.codeway.today" target="blank"><img src="https://codeway.today/wp-content/uploads/2021/10/codeway2.svg" width="320" alt="Codeway.today Logo" /></a>
 
 ## Description
 
-Api project for learning front-end framworrks.
+Api project for learning front-end framworks.
 
 ## Installation
 
