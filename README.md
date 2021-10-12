@@ -2,7 +2,7 @@
 
 ## Description
 
-Api project for learning front-end framworks.
+API project for learning front-end framworks.
 
 ## Installation
 
@@ -13,7 +13,6 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
 $ npm run start
 
 ```
